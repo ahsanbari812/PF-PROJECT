@@ -4,7 +4,6 @@
 #include <conio.h>
 #include<ctype.h>
 #include <windows.h>
-#include <process.h>
 
 
 int length;
@@ -60,6 +59,7 @@ int main()
 
 }
 
+// AHMED DID THIS
 
 void gotoxy(int x, int y)// This function allows you to print text in any place of screen.//
 {
@@ -83,7 +83,8 @@ void GotoXY(int x, int y)// This function allows you to print text in any place 
     a = GetStdHandle(STD_OUTPUT_HANDLE);
     SetConsoleCursorPosition(a,b);
 }
-void load()//This function is called before start the game//
+// MAHNOOR DID THIS 
+void load()//This function is for loading//
 {
     int row,col,r,c,q;
     gotoxy(36,14);
@@ -102,6 +103,7 @@ void Delay(long double k)
     long double i;
     for(i=0; i<=(10000000); i++);
 }
+// AHSAN DID THIS
 void Food()
 {
     if(head.x==food.x&&head.y==food.y)
@@ -129,7 +131,7 @@ void Food()
     }
 }
 
-
+// AHMED DID THIS
 void Bend()
 {
     int i,j,diff;
@@ -195,27 +197,29 @@ void Bend()
         }
     }
 }
+//MAHNOOR DID THIS
 void Boarder()
 {
     system("cls");
     int i;
-    GotoXY(food.x,food.y);   /*displaying food*/
+    GotoXY(food.x,food.y);   
     printf("F");
     for(i=10; i<71; i++)
     {
         GotoXY(i,10);
-        printf("!");
+        printf("|");
         GotoXY(i,30);
-        printf("!");
+        printf("|");
     }
     for(i=10; i<31; i++)
     {
         GotoXY(10,i);
-        printf("!");
+        printf("|");
         GotoXY(70,i);
-        printf("!");
+        printf("|");
     }
 }
+// AHSAN DID THIS
 void Print()//print a messege welcome for player//
 {
     printf("\tWelcome To The Snake Game.\n\n (Press Any Key To Continue...)\n");
