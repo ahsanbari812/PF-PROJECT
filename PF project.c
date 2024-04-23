@@ -48,7 +48,6 @@ int main()
 
     head.y=20;
 
-    head.direction=RIGHT;
 
     Boarder();//Border of the play board//
 
